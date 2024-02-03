@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:crypto_telestat/features/trending_coins_list/model/coin_model.dart';
+import 'package:crypto_telestat/features/trending_coins_list/data/model/coin_model.dart';
 import 'package:crypto_telestat/features/trending_coins_list/repository/trending_coin_repository.dart';
 import 'package:equatable/equatable.dart';
 

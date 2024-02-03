@@ -1,4 +1,4 @@
-import 'package:crypto_telestat/features/trending_coins_list/model/coin_model.dart';
+import 'package:crypto_telestat/features/trending_coins_list/data/model/coin_model.dart';
 import 'package:crypto_telestat/features/trending_coins_list/repository/trending_coin_interface.dart';
 import 'package:crypto_telestat/features/trending_coins_list/data/local/list_coin_service.dart';
 import 'package:dio/dio.dart';

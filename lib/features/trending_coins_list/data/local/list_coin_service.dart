@@ -1,4 +1,4 @@
-import 'package:crypto_telestat/features/trending_coins_list/model/coin_model.dart';
+import 'package:crypto_telestat/features/trending_coins_list/data/model/coin_model.dart';
 import 'package:hive/hive.dart';
 
 class ListCoinService {

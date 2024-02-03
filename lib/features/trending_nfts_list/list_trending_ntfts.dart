@@ -15,7 +15,6 @@ class ListTrendingNtfs extends StatelessWidget {
         create: (context) => GetIt.I.get<ListNftsCubit>()..getTrendingNfts(),
         child: BlocBuilder<ListNftsCubit, ListNftsState>(
           builder: (context, state) {
-            print(state.status);
             if (state.status == ListNFTsStatus.success) {
               return RefreshIndicator(
                 onRefresh: () async =>

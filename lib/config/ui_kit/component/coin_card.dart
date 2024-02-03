@@ -1,6 +1,6 @@
 import 'package:crypto_telestat/config/ui_kit/theme/color_theme.dart';
 import 'package:crypto_telestat/config/ui_kit/theme/theme_context_extention.dart';
-import 'package:crypto_telestat/features/trending_coins_list/model/coin_model.dart';
+import 'package:crypto_telestat/features/trending_coins_list/data/model/coin_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

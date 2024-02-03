@@ -15,7 +15,6 @@ class ListTrendingCoin extends StatelessWidget {
         create: (context) => GetIt.I.get<ListCoinsCubit>()..getTrendingCoins(),
         child: BlocBuilder<ListCoinsCubit, ListCoinsState>(
           builder: (context, state) {
-            print(state.status);
             if (state.status == ListCoinStatus.success) {
               return RefreshIndicator(
                 onRefresh: () async =>
