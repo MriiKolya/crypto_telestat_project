@@ -14,7 +14,10 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('CryptoApp'),
+        title: const Text(
+          'CryptoApp',
+          style: TextStyles.title1,
+        ),
         leading: IconButton(
           icon: const Icon(Icons.language),
           onPressed: () => context.read<LocalizationCubit>().changeLocale(),
@@ -26,14 +29,20 @@ class DashboardScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              S.of(context).trendingCoin,
-              style: TextStyles.title1,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+              child: Text(
+                S.of(context).trendingCoin,
+                style: TextStyles.title2,
+              ),
             ),
             const Expanded(child: ListTrendingCoin()),
-            Text(
-              S.of(context).trendingNfts,
-              style: TextStyles.title1,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+              child: Text(
+                S.of(context).trendingNfts,
+                style: TextStyles.title2,
+              ),
             ),
             const Expanded(child: ListTrendingNtfs()),
           ],
