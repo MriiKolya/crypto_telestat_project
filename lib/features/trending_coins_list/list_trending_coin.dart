@@ -1,6 +1,7 @@
 import 'package:crypto_telestat/config/ui_kit/component/coin_card.dart';
 import 'package:crypto_telestat/config/ui_kit/theme/text_style.dart';
 import 'package:crypto_telestat/features/trending_coins_list/cubit/list_coins_cubit.dart';
+import 'package:crypto_telestat/generated/l10n.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -32,18 +33,19 @@ class ListTrendingCoin extends StatelessWidget {
                     }),
               );
             } else if (state.status == ListCoinStatus.loading) {
-              return const Center(child: CircularProgressIndicator());
+              return const Center(
+                  child: RepaintBoundary(child: CircularProgressIndicator()));
             } else {
               return Center(
                 child: Column(
                   children: [
-                    const Text(
-                      'Please try again latter',
+                    Text(
+                      S.of(context).pleaseTryAgainLatter,
                       style: TextStyles.title2,
                     ),
                     CupertinoButton(
-                        child: const Text(
-                          'try again',
+                        child: Text(
+                          S.of(context).tryAgain,
                           style: TextStyles.body,
                         ),
                         onPressed: () =>

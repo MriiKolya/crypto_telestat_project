@@ -1,6 +1,7 @@
 import 'package:crypto_telestat/config/ui_kit/component/nfts_card.dart';
 import 'package:crypto_telestat/config/ui_kit/theme/text_style.dart';
 import 'package:crypto_telestat/features/trending_nfts_list/cubit/list_nfts_cubit.dart';
+import 'package:crypto_telestat/generated/l10n.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -37,13 +38,13 @@ class ListTrendingNtfs extends StatelessWidget {
             return Center(
                 child: Column(
               children: [
-                const Text(
-                  'Please try again latter',
+                Text(
+                  S.of(context).pleaseTryAgainLatter,
                   style: TextStyles.title2,
                 ),
                 CupertinoButton(
-                    child: const Text(
-                      'try again',
+                    child: Text(
+                      S.of(context).tryAgain,
                       style: TextStyles.body,
                     ),
                     onPressed: () =>
