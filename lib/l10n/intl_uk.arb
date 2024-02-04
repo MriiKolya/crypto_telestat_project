@@ -1,4 +1,6 @@
 {
-    "trendingCoin": "Популярні монети",
-    "trendingNfts": "Популярні NFTs"
+  "trendingCoin": "Популярні монети",
+  "trendingNfts": "Популярні NFTs",
+  "pleaseTryAgainLatter": "Будь ласка, повторіть спробу пізніше",
+  "tryAgain": "Спробуйте ще раз"
 }

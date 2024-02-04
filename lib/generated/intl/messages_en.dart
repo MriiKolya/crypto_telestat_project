@@ -22,7 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "pleaseTryAgainLatter":
+            MessageLookupByLibrary.simpleMessage("Please try again latter"),
         "trendingCoin": MessageLookupByLibrary.simpleMessage("Trending coin"),
-        "trendingNfts": MessageLookupByLibrary.simpleMessage("Trending NFTs")
+        "trendingNfts": MessageLookupByLibrary.simpleMessage("Trending NFTs"),
+        "tryAgain": MessageLookupByLibrary.simpleMessage("try again")
       };
 }

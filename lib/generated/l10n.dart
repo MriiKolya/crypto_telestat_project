@@ -69,6 +69,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Please try again latter`
+  String get pleaseTryAgainLatter {
+    return Intl.message(
+      'Please try again latter',
+      name: 'pleaseTryAgainLatter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `try again`
+  String get tryAgain {
+    return Intl.message(
+      'try again',
+      name: 'tryAgain',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
